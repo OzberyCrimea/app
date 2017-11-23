@@ -8,4 +8,4 @@ $pathTheme = $this->assetManager->getBundle(KedavraAsset::className())->baseUrl;
 
 ?>
 
-<h1>Hello!</h1>
+<h1>Hello!!!</h1>
