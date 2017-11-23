@@ -45,11 +45,11 @@ return [
         },
         'view' => [
             'theme' => [
-                'basePath' => '@frontend/themes/EShopper',
-                'baseUrl' => '@frontend/themes/EShopper',
+                'basePath' => '@frontend/themes/Kedavra',
+                'baseUrl' => '@frontend/themes/Kedavra',
                 'pathMap' => [
-                    '@frontend/views' => '@frontend/themes/EShopper/views',
-                    '@frontend/views/modules' => '@frontend/themes/EShopper/views/modules'
+                    '@frontend/views' => '@frontend/themes/Kedavra/views',
+                    '@frontend/views/modules' => '@frontend/themes/Kedavra/views/modules'
                 ],
             ],
         ],

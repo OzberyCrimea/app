@@ -5,10 +5,10 @@
 
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
-use frontend\themes\EShopper\assets\EShopperAsset;
+use frontend\themes\Kedavra\assets\KedavraAsset;
 
 AppAsset::register($this);
-EShopperAsset::register($this);
+KedavraAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
