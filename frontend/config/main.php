@@ -14,10 +14,10 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
-            'class' => 'common\models\entities\base\AppRequest'
+            'class' => 'common\expand\Request'
         ],
         'user' => [
-            'identityClass' => 'common\models\services\auth\UserService',
+            'identityClass' => 'common\services\UserService',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
@@ -45,14 +45,10 @@ return [
         },
         'view' => [
             'theme' => [
-                'basePath' => '@frontend/themes/Kedavra',
-                'baseUrl' => '@frontend/themes/Kedavra',
-                'pathMap' => [
-                    '@frontend/views' => '@frontend/themes/Kedavra/views',
-                    '@frontend/views/modules' => '@frontend/themes/Kedavra/views/modules'
-                ],
-            ],
-        ],
+                'class' => 'common\expand\Theme',
+                'active' => 'ozbery',
+            ]
+        ]
     ],
     'params' => $params,
 ];

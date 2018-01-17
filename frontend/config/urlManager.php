@@ -3,7 +3,7 @@
 /** @var array $params */
 
 return [
-    'class' => 'common\models\entities\base\AppUrlManager',
+    'class' => 'common\expand\UrlManager',
     'hostInfo' => $params['frontendHostInfo'],
     'baseUrl' => '',
     'enablePrettyUrl' => true,
